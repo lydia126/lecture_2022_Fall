@@ -1,4 +1,4 @@
-# Lecture 03. Descriptive Statistics Using R
+# 2022 Fall Lecture 03. Descriptive Statistics Using R
 ## Objective: summarizing, describing and presenting data
 ## Example data: iris
 
@@ -37,7 +37,7 @@ summary(dat)
 by(dat, dat$Species, summary) # summary by group
 
 ## use package "pastecs" for stat.desc() library
-install.packages("pastecs")
+#install.packages("pastecs")
 library(pastecs)
 stat.desc(dat, norm = TRUE)
 
