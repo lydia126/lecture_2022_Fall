@@ -1,7 +1,7 @@
 # 2022 Fall Lecture 03. Descriptive Statistics Using R
 ## Objective: summarizing, describing and presenting data
 ## Example data: iris
-
+# github test
 # 1. Load data and view
 dat <- iris
 head(dat) # first 6 observations
