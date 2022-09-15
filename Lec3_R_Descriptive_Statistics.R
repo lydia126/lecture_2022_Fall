@@ -37,7 +37,7 @@ summary(dat)
 by(dat, dat$Species, summary) # summary by group
 
 ## use package "pastecs" for stat.desc() library
-#install.packages("pastecs")
+install.packages("pastecs")
 library(pastecs)
 stat.desc(dat, norm = TRUE)
 
@@ -69,7 +69,7 @@ library(ggplot2)
 
 ggplot(dat) +
   aes(x = Sepal.Length) +
-  geom_histogram(bins = 30)
+  geom_histogram(bins = 20)
 
 ggplot(dat) +
   aes(x = Species, y = Sepal.Length) +
