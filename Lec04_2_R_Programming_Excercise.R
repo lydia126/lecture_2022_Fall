@@ -24,7 +24,7 @@ if (x>=90){
   grade='c'
 } else {
   grade='D'
-print(grade)
+  print(grade)
 }
 
 for (x1 in c(50, 70, 100, 95, 85)) {
@@ -164,7 +164,7 @@ tapply(iris$Sepal.Length, Species, mean)
 sum(c(1,2,3, NA))
 sum(c(1,2,3,NA), na.rm=TRUE)
 (x<-data.frame(a=c(1,2,3), b=c("a",NA,"c"), c=c("a","b",NA)))
-#na.fail(x)   #NA가 포함되어 있으므로 실패
+na.fail(x)   #NA가 포함되어 있으므로 실패
 na.omit(x)   #NA가 포함된 행은 제외
 na.exclude(x)   #NA가 포함된 행은 제외
 na.pass(x)   #NA의 여부에 상관없이 통과

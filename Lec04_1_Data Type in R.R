@@ -13,7 +13,10 @@ print(class(apple))
 
 ## 벡터 연산, 배열 할당
 mean(x<-c(1,2,3))   # 값 할당은 <- 사용 할 것
-mean(x=c(1,2,3))    
+x                   # 값 할당과 동시 연산 가능
+mean(x=c(4,5,6))    # 연산은 되지만 값 할당 않됨
+x
+
 y<-c(1,3,4)
 names(y)<-c("kim","seo","park")
 y

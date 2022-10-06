@@ -7,9 +7,9 @@
   # specify dataset and mapping
   ggplot(data=iris, mapping=aes(x=Sepal.Length, y = Sepal.Width)) 
   
-  #qplot(x = Sepal.Length, y = Sepal.Width, data = iris, 
-  #      xlab="Sepal Length", ylab="Sepal Width", 
-  #      main="Sepal Length-Width", color=Species, shape=Species)
+  qplot(x = Sepal.Length, y = Sepal.Width, data = iris, 
+        xlab="Sepal Length", ylab="Sepal Width", 
+        main="Sepal Length-Width", color=Species, shape=Species)
   
   scatter <- ggplot(data=iris, aes(x = Sepal.Length, y = Sepal.Width)) 
   scatter + geom_point(aes(color=Species, shape=Species)) +
